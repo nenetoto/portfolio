@@ -1,4 +1,4 @@
-* # Decoration : 아바타 꾸미기
+* # Decoration: 아바타 꾸미기
  * ## 나의 아바타를 꾸미기 아이템과 함께 배치하는 콘텐츠 코드 일부입니다.
  * ## Controller 
     * DecorationObjectControllPad
@@ -15,7 +15,7 @@
        * 파티클로 구성된 꾸미기 아이템 오브젝트입니다.
      * BackgroundDecorationObject, NpcDecorationObject, StickerDecorationObject
        *   단순 이미지로 구성된 꾸미기 아이템 오브젝트입니다.
-* # Platforms : 플랫폼 매니저와 각 플랫폼에 대한 처리
+* # Platforms: 플랫폼 매니저와 각 플랫폼에 대한 처리
  * ## 프로젝트 전반의 매니저 처리와 각 플랫폼 상황에 따라 처리된 코드 일부입니다.
  * ## PlatformManager
    * 로컬 노티와 리뷰 기능을 플랫폼에 별로 활성화시키며 필요 기능을 호출하는 역할을 합니다. 매니저는 최대한 간결하고 기능에 대한 함수만을 제공하려고 했으며, 로직은 각 플랫폼에 해당하는 클래스를 작성하여 처리하였습니다.
@@ -33,3 +33,14 @@
     * iOS 스토어 리뷰 기능하는 클래스입니다.
   * AndroidStoreReview
     * Android 스토어 리뷰 가능하는 클래스입니다.
+   
+* # TableGeneratorTool: 테이블 생성 툴 코드 일부입니다.
+* ## 기획파트에서 작성한 엑셀 파일을 클라이언트에서 사용하기 위해 cs, json 파일을 생성해 주는 툴의 코드 일부입니다.
+* CodeGenerator
+   * 엑셀파일을 읽어 cs 파일을 생성한는 클래스입니다.
+* JsonGenerator
+   * 엑셀파일을 읽어 json 테이블을 생성하는 클래스입니다.
+* TableGenerator
+   * 필요에 따라 cs, json 파일을 선택적으로 생성하도록 CodeGenerator, JsonGenerator 클래스를 포함하여 외부에 기능을 제공하는 클래스입니다.
+* Table Output (example)
+   * 위 기능을 사용하여 생성된 결과물 예시입니다.
